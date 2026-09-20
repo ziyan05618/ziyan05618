@@ -62,26 +62,6 @@ public final class Ziyan {
 
 ---
 
-## 🐍 Contribution Snake
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ziyan05618/ziyan05618/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ziyan05618/ziyan05618/output/github-contribution-grid-snake.svg" />
-    <img alt="contribution snake" src="https://raw.githubusercontent.com/ziyan05618/ziyan05618/output/github-contribution-grid-snake.svg" />
-  </picture>
-</div>
-
----
-
-## 🌌 3D Contribution
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/ziyan05618/ziyan05618/main/profile-3d-contrib/profile-night-rainbow.svg" width="98%" alt="3D contribution graph" />
-</div>
-
----
-
 ## 🌸 Random
 
 <div align="center">
