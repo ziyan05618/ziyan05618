@@ -1,0 +1,49 @@
+# 贡献蛇动画 —— 生成后推到 output 分支，供 README 引用
+#
+# 使用前必做：
+#   仓库 → Settings → Actions → General → Workflow permissions
+#   → 选 "Read and write permissions" → Save
+# 否则推送 output 分支会失败。
+#
+# 首次生成：Actions → Generate Snake Animation → Run workflow
+# 产物地址：
+#   https://raw.githubusercontent.com/ziyan05618/ziyan05618/output/github-contribution-grid-snake.svg
+#   https://raw.githubusercontent.com/ziyan05618/ziyan05618/output/github-contribution-grid-snake-dark.svg
+
+name: Generate Snake Animation
+
+on:
+  # 每天 UTC 00:00（北京时间 08:00）自动更新
+  schedule:
+    - cron: "0 0 * * *"
+  # 允许手动触发
+  workflow_dispatch:
+  # main 分支有推送时也跑一次
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      # github.repository_owner 会自动取当前仓库所有者，无需手改用户名
+      - name: Generate snake svg
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
