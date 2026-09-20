@@ -24,7 +24,7 @@
 ```java
 public final class Ziyan {
     private static final String ROLE    = "ミステリアスな人";
-    private static final String STACK   = "Java 21 / Gradle / Mixin / ASM";
+    private static final String STACK   = "ザコザコザコザコザコザコ";
     private static final String FOCUS   = "HUD & UI, License Protection, Anti-Bypass";
     private static final String[] TOOLS = { "IDEA", "Git", "IDA Pro", "Wireshark" };
     private static final String CITY    = "Shenzhen, China";
@@ -70,6 +70,14 @@ public final class Ziyan {
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ziyan05618/ziyan05618/output/github-contribution-grid-snake.svg" />
     <img alt="contribution snake" src="https://raw.githubusercontent.com/ziyan05618/ziyan05618/output/github-contribution-grid-snake.svg" />
   </picture>
+</div>
+
+---
+
+## 🌌 3D Contribution
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/ziyan05618/ziyan05618/main/profile-3d-contrib/profile-night-rainbow.svg" width="98%" alt="3D contribution graph" />
 </div>
 
 ---
